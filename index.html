@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikan Cupang</title>
+  <style>
+    /* style teks untuk memberi jarak atas dan bawah teks*/
+    .jarak-antarteks {
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    /*  */
+    .jarak-kiri {
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+
+    /* setting ukuran dari photo  */
+    .custom-image {
+      max-width: 100%;
+      width: 2000px;
+      height: 200px;
+      display: block;
+      margin: auto;
+    }
+
+    /* styling CSS untuk button, menempatkan tombol menggunakan margin */
+    .button-custom {
+      border: none;
+
+      /* Hilangkan batas tombol jika tidak diinginkan */
+      border-radius: 5px;
+      /* Tambahkan sudut bulat jika diinginkan */
+      margin-top: -450px;
+    }
+
+    /* .image-corner {
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    } */
+    .background{
+        background-color: blanchedalmond;
+        padding: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="background">
+
+  
+  <!-- button slide kiri -->
+  <button class="w3-button w3-display-left button-custom" onclick="plusDivs(-1)">&#10094;</button>
+  <!-- button slide kanan -->
+  <button class="w3-button w3-display-right button-custom" onclick="plusDivs(+1)">&#10095;</button>
+
+  <!-- image untuk phot slide -->
+  <img class="mySlides custom-image" src="halfmoon.jpg">
+  <img class="mySlides custom-image" src="veiltail.jpeg">
+  <img class="mySlides custom-image" src="plakat.jpeg">
+  <img class="mySlides custom-image" src="veiltail.jpeg">
+
+
+
+  <!-- pembuatan side bar -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar" style="background-color: blanchedalmond;">
+    <button class="w3-bar-item w3-button w3-large"style="background-color: blanchedalmond;" onclick="w3_close()">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button" style="background-color: blanchedalmond;">1</a>
+    <a href="#" class="w3-bar-item w3-button" style="background-color: blanchedalmond;">2</a>
+    <a href="#" class="w3-bar-item w3-button" style="background-color: blanchedalmond;">3</a>
+  </div>
+
+  <div id="main">
+
+    <!-- code untuk sidebar sett -->
+    <div class="w3-teal" >
+      <button id="openNav" class="w3-button w3-teal w3-xlarge"  onclick="w3_open()">&#9776;</button>
+      <div class="w3-container" >
+        <h1>Ikan Hias 'Jikoyuo'</h1>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-container" >
+      <h1>Ikan Cupang</h1>
+    </div>
+
+    <p><strong>Ikan cupang</strong> adalah jenis ikan air tawar yang populer di kalangan penggemar ikan hias. Ikan ini
+      berasal dari wilayah Asia Tenggara, terutama dari perairan rawa, sungai, dan sawah. Ikan cupang dikenal karena
+      keindahan warna dan bentuk siripnya yang unik, serta sifat agresif pada sesama ikan jantan.</p>
+
+    <p>Warna ikan cupang sangat bervariasi, termasuk biru, merah, hijau, dan lainnya.</p>
+
+    <div class="w3-container">
+      <h2>Beberapa Jenis Ikan Cupang:</h2>
+    </div>
+
+    <ul>
+      <li style="color: black;">
+        <p class="jarak-antarteks" style="color: red">
+          <strong>Halfmoon:</strong>
+        </p>
+        <p>Ikan Cupang Halfmoon dikenal karena bentuk ekornya yang berbentuk setengah bulan. Mereka memiliki sirip yang
+          sangat besar dan lebar ketika dikembangkan, menciptakan tampilan yang indah dan menarik.</p>
+        <div class="w3-card-4" style="width:20%">
+          <img src="halfmoon.jpg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Cupang Halfmoon</p>
+          </div>
+      </li>
+
+      <li style="color: black; position: ;" >
+        <p class="jarak-antarteks" style ="color: blue">
+          <strong>Plakat:</strong>
+        </p>
+        <p>Ikan Cupang Plakat memiliki bentuk tubuh yang lebih ramping dan sirip yang lebih pendek dibandingkan dengan
+          beberapa varietas lainnya. Mereka cenderung lebih aktif dan agresif, sehingga sering dipilih untuk pertarungan
+          cupang (Betta fighting).</p>
+        <div class="w3-card-4" style="width:20%">
+          <img src="plakat.jpeg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Cupang Plakat</p>
+          </div>
+      </li>
+
+      <li style="color: orangered;">
+        <p class="jarak-antarteks">
+          <strong>Crowntail:</strong>
+        </p>
+
+        <p>Ciri khas ikan Cupang Crowntail adalah siripnya yang memiliki "rajutan" panjang dan berlekuk, memberikan
+          tampilan seperti mahkota. Ini menciptakan efek visual yang menarik dan unik.</p>
+        <div class="w3-card-4" style="width:20%">
+          <img src="crowntail.jpeg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Cupang Crowntail</p>
+          </div>
+        </div>
+      </li>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+      <li style="color: cadetblue;">
+        <p class="jarak-antarteks">
+          <strong>Veiltail:</strong>
+        </p>
+
+        <p>Ikan Cupang Veiltail memiliki sirip ekor yang panjang dan menggantung, menciptakan tampilan yang anggun.
+          Sirip mereka biasanya lebih panjang daripada varietas lain, dan mereka dikenal karena keindahan siripnya
+          yang
+          memanjang.</p>
+        <div class="w3-card-4" style="width:20%">
+          <img src="veiltail.jpeg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Cupang Veiltail</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+    <h2>Informasi Lebih Lanjut:</h2>
+    <p>Untuk informasi lebih lanjut tentang ikan cupang, kunjungi <a
+        href="https://id.wikipedia.org/wiki/Cupang">Wikipedia
+        - Cupang</a>.</p>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
+    
+</div>
+</body>
+
+</html>
